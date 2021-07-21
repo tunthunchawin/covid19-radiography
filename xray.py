@@ -1,11 +1,9 @@
 import tensorflow as tf
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
-import os
+
 import streamlit as st
-import matplotlib.image as mpimg
+
 
 from PIL import Image, ImageOps
 
