@@ -2,8 +2,6 @@ streamlit==0.76.0
 tensorflow==2.5.0
 numpy==1.19.2
 tensorboard==2.5.0 
-tensorboard-data-server==0.6.1
-tensorboard-plugin-wit==1.8.0
 matplotlib==3.3.2
 tensorflow-estimator==2.5.0
 
