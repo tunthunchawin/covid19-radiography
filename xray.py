@@ -17,7 +17,7 @@ def load_data():
 
 
 
-ld_model = load_data()
+#ld_model = load_data()
 
 
 
