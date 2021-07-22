@@ -10,8 +10,8 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 @st.cache(allow_output_mutation=True)
 def load_data():
-	PATH_LOADMODEL = "https://github.com/tunthunchawin/covid19-radiography/blob/main/saved_model.pb"
-	loaded_model = tf.keras.models.load_model(PATH_LOADMODEL)
+	#PATH_LOADMODEL = "https://github.com/tunthunchawin/covid19-radiography/blob/main/saved_model.pb"
+	loaded_model = tf.keras.models.load_model("saved_model.pb")
 
 	return loaded_model
 
