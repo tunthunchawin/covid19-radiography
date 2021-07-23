@@ -64,7 +64,7 @@ def classifying3(x,y):
 	if upload_file is not None:
 		img= Image.open(x).convert('RGB')
 
-		st.subheader("The photo you selected")
+		st.subheader("The photo you've selected")
 		st.image(img, caption='Uploaded Chest X-ray', use_column_width=True)
 		st.write("")
 		loading = st.text("Classified...✔️")
@@ -92,11 +92,13 @@ def classifying3(x,y):
 			st.write('**Detected COVID-19...🏨😟**')
 			st.write('**Noted: the model has 89 percent accuracy, you are required to recieve further diagnosis.**')
 			st.write(abs(1-prediction[0][0])*100)
+			st.image('diagnosis.png')
 
 		else:
 			st.write('**Undetected...🏘️🤗**')
 			st.write('**Noted: the model has 89 percent accuracy, you are required to recieve further diagnosis.**')
 			st.write(prediction[0][0])
+			st.image('diagnosis.png')
 
 
 classifying3(upload_file,ld_model)
