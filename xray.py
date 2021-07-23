@@ -11,7 +11,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 @st.cache(allow_output_mutation=True)
 def load_data():
 	#PATH_LOADMODEL = "C:/Users/Admin/Downloads/transfer_learning_model"
-	loaded_model = tf.keras.models.load_model("my_model.h5")
+	loaded_model = tf.keras.models.load_model("my_model2.h5")
 
 	return loaded_model
 
