@@ -21,13 +21,13 @@ ld_model = load_data()
 
 
 
-st.header('***CAN WE DETECT COVID-19 BY CHEST RADIOGRAPH?***')
+st.header('***CAN WE DETECT COVID-19 INFECTION BY CHEST RADIOGRAPH?***')
 st.write('Tun Thunchawin')
 st.write('   Of course, Applying deep learning is one of the possible approaches to detect covid-19 infection. Image transfer learning is the technique that I used to create the model, because the number of images we have was somewhat limited; thus, the technique whereby a neural network model is first trained on a problem similar to the problem that is being solved was suitable for our issue.')
 st.write('')
 st.write('')
 
-st.image('transfer2.png',width=800)
+st.image('transfer2.png')
 st.write('Source:https://www.mdpi.com/2072-4292/12/11/1780')
 
 st.header('***EFFORTLESS TO USE JUST INSERT AN IMAGE DOWN BELOW 👇👇👇***')
@@ -41,7 +41,7 @@ st.header('***EFFORTLESS TO USE JUST INSERT AN IMAGE DOWN BELOW 👇👇👇***'
 
 
 
-st.image("corona.jpg",width=800)
+st.image("corona.jpg")
 
 st.title("")
 st.header("")
@@ -93,12 +93,16 @@ def classifying3(x,y):
 			st.write('**Noted: the model has 89 percent accuracy, you are required to recieve further diagnosis.**')
 			st.write(abs(1-prediction[0][0])*100)
 			st.image('diagnosis.png')
+			st.write('**Noted: The model was trained at balanced data.**')
+
 
 		else:
 			st.write('**Undetected...🏘️🤗**')
 			st.write('**Noted: the model has 89 percent accuracy, you are required to recieve further diagnosis.**')
 			st.write(prediction[0][0])
 			st.image('diagnosis.png')
+			st.write('**Noted: The model was trained at balanced data.**')
+
 
 
 classifying3(upload_file,ld_model)
