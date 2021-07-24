@@ -23,7 +23,7 @@ ld_model = load_data()
 
 st.header('***CAN WE DETECT COVID-19 INFECTION BY CHEST RADIOGRAPH?***')
 st.write('Tun Thunchawin')
-st.write('   Of course, Applying deep learning is one of the possible approaches to detect covid-19 infection. Image transfer learning is the technique that I used to create the model, because the number of images we have was somewhat limited; thus, the technique whereby a neural network model is first trained on a problem similar to the problem that is being solved was suitable for our issue.')
+st.write('   Of course, Applying deep learning is one of the possible approaches to detect covid-19 infection. Image transfer learning is the technique that I used to create the model, because the number of images we have is somewhat limited; thus, the technique whereby a neural network model is first trained on a problem similar to the problem that is being solved is suitable for our issue.')
 st.write('')
 st.write('')
 
