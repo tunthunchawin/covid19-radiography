@@ -89,7 +89,7 @@ def classifying3(x,y):
 		x = np.where(prediction < 0.5, 0, 1)
 
 		if x ==0:
-			st.write('**Detected COVID-19...🏨😟**')
+			st.write('**Result: Detected COVID-19...🏨😟**')
 			st.write('**Noted: the model has 89 percent accuracy, you are required to recieve further diagnosis.**')
 			st.write(abs(1-prediction[0][0])*100)
 			st.image('diagnosis.png')
@@ -97,7 +97,7 @@ def classifying3(x,y):
 
 
 		else:
-			st.write('**Undetected...🏘️🤗**')
+			st.write('**Result: Undetected COVID-19...🏘️🤗**')			
 			st.write('**Noted: the model has 89 percent accuracy, you are required to recieve further diagnosis.**')
 			st.write(prediction[0][0])
 			st.image('diagnosis.png')
